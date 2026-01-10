@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RALPH Paper Auto Completion Profile v1.0",
+  "type": "object",
+  "required": [
+    "DATA_INPUT"
+  ],
+  "properties": {
+    "DATA_INPUT": {
+      "type": "object",
+      "required": [
+        "study_design",
+        "results_payload"
+      ],
+      "properties": {
+        "study_design": {
+          "type": "string",
+          "enum": [
+            "cross-sectional",
+            "longitudinal",
+            "experimental",
+            "intervention"
+          ]
+        },
+        "target_journal": {
+          "type": "object"
+        },
+        "sample": {
+          "type": "object"
+        },
+        "measures": {
+          "type": "object"
+        },
+        "statistics": {
+          "type": "object"
+        },
+        "results_payload": {
+          "type": "object",
+          "required": [
+            "tables",
+            "key_findings"
+          ],
+          "properties": {
+            "tables": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "figures": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "key_findings": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "citations": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

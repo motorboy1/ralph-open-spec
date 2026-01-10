@@ -1,0 +1,19 @@
+{
+  "spec_id": "RALPH-CORE-CONSTITUTION-v1.0",
+  "status": "IMMUTABLE",
+  "rules": {
+    "supremacy": true,
+    "zero_inference": true,
+    "section_isolation": true,
+    "evidence_lock": true,
+    "loop_integrity": {
+      "min_loops": 2,
+      "verification_required": true
+    },
+    "failure_lock": {
+      "mode": "hard_stop",
+      "output_format": "FAILED: <reason>"
+    },
+    "amendment": "version_bump_only"
+  }
+}
