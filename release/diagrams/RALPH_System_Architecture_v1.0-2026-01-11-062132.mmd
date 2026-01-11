@@ -1,0 +1,54 @@
+flowchart TD
+    subgraph " "
+        direction LR
+        subgraph "🤖 Automation Units"
+            A1["<b>Script</b><br/>정해진 순서대로 실행"]
+            A2["<b>Bot</b><br/>고정된 규칙 기반 응답"]
+            A3["<b>Agent</b><br/>상태 인식, 자율 판단"]
+            A4["<b>Agentic Workflow</b><br/>여러 Agent가 협력"]
+        end
+
+        subgraph "🧠 AI Processing"
+            B1["<b>LLM</b><br/>자연어 처리 핵심"]
+            B2["<b>Tool Use</b><br/>외부 도구 호출로 기능 확장"]
+            B3["<b>RAG</b><br/>검색 기반으로 답변 생성"]
+            B4["<b>Fine-tuning</b><br/>도메인 데이터로 모델 최적화"]
+        end
+
+        subgraph "💾 Data & State"
+            C1["<b>Session Memory</b><br/>단기 기억"]
+            C2["<b>Persistent Memory</b><br/>장기 기억"]
+            C3["<b>State Graph</b><br/>상태 머신으로 워크플로 제어"]
+            C4["<b>Caching</b><br/>반복 요청 결과 재사용"]
+        end
+    end
+
+    subgraph " "
+        direction LR
+        subgraph "🛠️ Automation & Coding Tools"
+            D1["<b>n8n</b><br/>오픈소스 워크플로 자동화"]
+            D2["<b>OpenRouter</b><br/>LLM 모델 통합 라우팅"]
+            D3["<b>Cursor AI</b><br/>AI 기반 코드 에디터"]
+            D4["<b>GitHub Copilot</b><br/>코드 자동 완성"]
+        end
+
+        subgraph "🏗️ Frameworks"
+            E1["<b>LangGraph</b><br/>상태 그래프 기반 워크플로"]
+            E2["<b>CrewAI</b><br/>역할 기반 멀티 에이전트 협업"]
+            E3["<b>AutoGen</b><br/>에이전트 간 대화형 협업"]
+        end
+
+        subgraph "🤝 Collaboration Structures"
+            F1["<b>MAS</b><br/>다수 에이전트 협력 시스템"]
+            F2["<b>Coordinator/Worker</b><br/>조정자-작업자 패턴"]
+            F3["<b>Blackboard</b><br/>공유 보드 기반 지식 공유"]
+        end
+    end
+
+    subgraph " "
+        direction LR
+        subgraph "📈 Ops & Monitoring"
+            G1["<b>Evaluation</b><br/>품질 측정을 위한 평가"]
+            G2["<b>Telemetry</b><br/>시스템 상태 모니터링"]
+        end
+    end
