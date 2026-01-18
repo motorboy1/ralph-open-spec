@@ -247,3 +247,5 @@ Continuity Log 파일명을
 식별 무결성 위반(Identity Integrity Violation) 으로 간주한다.
 
 # TEMP VIOLATION
+
+# VIOLATION TEST
