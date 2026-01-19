@@ -60,3 +60,77 @@ RALPH Open Spec v1.0 — STABLE
 # pre-commit test
 
 # test-pass
+
+# RALPH Research OS
+
+RALPH Research OS는  
+**AI를 어떻게 써야 하는지를 정의하는 작업 방식 OS**입니다.
+
+AI 모델이나 UI가 아니라,  
+규칙·실행·검증·로그를 중심으로 한 **불변 코어(Immutable Core)**를 제공합니다.
+
+---
+
+## Core Philosophy
+
+- AI / UI / Tool → Replaceable Shell
+- Working Method → Immutable Core
+- User → Operator (not prompter)
+- Change → Absorbed, not propagated
+
+---
+
+## Why RALPH
+
+AI와 UI는 빠르게 바뀝니다.  
+작업 방식까지 함께 바뀌면 생산성은 붕괴됩니다.
+
+RALPH는 변화 속에서도  
+**작업의 일관성과 책임 구조를 유지**하기 위해 설계되었습니다.
+
+---
+
+## Execution Environments
+
+RALPH는 단일 UI를 강제하지 않습니다.
+
+### Design & Exploration
+
+- Cursor + Claude
+
+### Orchestration & Validation
+
+- Claude CLI + MCP
+- GPT / Gemini 연동 가능
+
+### Governance Core
+
+- Constitution
+- Contract Engine
+- Failure Classes
+
+---
+
+## Relationship with Vibe Studio
+
+- **RALPH**: 규칙과 작업 방식을 정의하는 OS
+- **Vibe Studio**: RALPH 위에서 동작하는 작업장(UI 플랫폼)
+
+RALPH 없는 Vibe Studio 단독 운용은 허용되지 않습니다.
+
+---
+
+## Repository Structure
+
+spec/constitution/ # Immutable core
+spec/execution/ # Execution modes
+spec/roles/ # Platform separation
+docs/external/ # External communication
+ops/ # Experiments & proposals
+
+---
+
+## One-Line Summary
+
+> AI는 바뀌어도,  
+> 우리의 작업 방식은 바뀌지 않는다.
