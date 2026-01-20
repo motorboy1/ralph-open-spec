@@ -4,7 +4,7 @@
 **Scope:** RALPH Core Constitution & Official Profiles  
 **Change Policy:**
 
-- Core Constitution (`spec/constitution/`) is **immutable** after v1.0
+- Core Constitution (`spec/constitution/`) is **structurally immutable** after v1.0; revisions are managed via versioned releases (e.g., v1.4).
 - New capabilities must be introduced via **new profiles or versions**
 - Backward-incompatible changes require a **major version bump**
 
